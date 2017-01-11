@@ -1,0 +1,604 @@
+@media screen and (max-width: 767px) and (min-width: 320px) {
+	br {
+		display: none;
+	}
+	.btn_sign {
+  	margin-right: 0;
+  }
+  .btn_send {
+  	margin-top: 20px;
+  }
+
+  .top-header {
+  	display: none;
+  }
+  .header-adaptive {
+  	display: flex;
+  }
+  .header-call_adaptive,
+  .header_lang_adaptive,
+  .warning_sign {
+    display: none;
+  }
+  .main-content_socials {
+  	display: none;
+  }
+
+  .page-title {
+  	font-size: 30px;
+  	margin: 0;
+  }
+  .btn_white {
+  	padding: 0;
+  	padding: 10px 18px;;
+ }
+
+  .page-description {
+  	margin: 0;
+  	font-size: 21px;
+    margin-top: 15px;
+  	line-height: 38px;
+  }
+
+  .main-content_description {
+  	padding: 0;
+  	padding-top: 85px;
+  	padding-bottom: 40px;
+  }
+
+  .main-content_description .page-description {
+  	margin-bottom: 35px;
+  }
+  .arrow {
+  	padding-bottom: 0;
+  }
+
+  .arrow a {
+  	margin-top: 50px;
+  }
+
+/*Преимущества*/
+
+  .wrapper-semi-medium {
+	width: 80%;
+}
+.main_product-description {
+	padding-top: 45px;
+}
+
+.product-description_item {
+	padding-top: 45px;
+}
+
+.product-description_item:first-child {
+	padding-top: 0;
+}
+.item-text {
+	width: 100%;
+  max-width: 288px;
+  text-align: left;
+  position: relative;
+
+}
+.product-description_item img {
+	margin: 0 auto;
+	margin-bottom: 15px;
+	
+}
+.product-description_item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.item-reverse  {
+	flex-direction: column-reverse;
+}
+
+
+.item-img_left,
+.item-img_right {
+  display: block;
+  margin: 0 auto
+}
+.product-description_item:nth-child(odd) {
+    padding-left:0;
+}
+
+.img-left {
+	margin-right: 0;
+}
+
+.img-right {
+	margin-left: 0;
+}
+
+.product-description_item:nth-child(even) .item-text{
+	text-align: left;
+}
+
+.item-text {
+	margin: 0 auto;
+}
+
+
+/*ПРИЗЫВЫ*/
+.main-content_cta {
+    padding-top: 5px;
+}
+
+.cta_title {
+    line-height: 35px;
+}
+.wrapper-semi-small {
+	width: 75%;
+}
+
+.cta_offer {
+	    line-height: 22px;
+}
+
+/*ЧЕ ЭТО ВАЩЕ*/
+.main-content_about {
+	padding-top: 60px;
+	height: auto;
+	padding-bottom: 55px;
+}
+.main-content_about .page-title {
+	margin-bottom: 40px;
+}
+.main-content_about .page-description {
+	line-height: 24px;
+ }
+.main-content_stages {
+	position: static;
+	width: auto;
+	margin-top: 0;
+	padding: 25px 0px;
+}
+
+.disclaimer_text {
+	line-height: 24px;
+	font-weight: 500;
+}
+
+.stage_item {
+    padding-left: 45px;
+    padding-right: 0;
+}
+
+.stage_item_text {
+	margin-bottom: 35px;
+}
+
+.stage_item_text::before {
+    width: 35px;
+    height: 35px;
+    left: -49px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/*Цены*/
+
+.main-content_price {
+    padding-top: 50px;
+}
+.main-content_price .wrapper-small {
+	width: 100%
+}
+
+.main-content_price .page-title {
+    margin-bottom: 50px;
+}
+
+.main-content_price .page-text {
+    line-height: 24px;
+}
+
+.advantage_item {
+	width: 100%;
+  max-width: 288px;
+}
+
+.advantage_item:nth-child(odd) {
+    margin-left: 0px;
+}
+
+.price_advantages {
+    text-align: center;
+}
+
+.item_one,
+.item_three {
+	margin-right: 0;
+}
+
+/*Предупреждение*/
+.page-text-block {
+    width: auto;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 90px;
+}
+
+.main-content_warning {
+	padding-top: 105px;
+}
+
+.main-content_warning .page-title {
+    margin-bottom: 30px;
+}
+
+.page-text-block .page-text {
+    line-height: 23px;
+}
+
+.main-content_subscribe .page-description {
+	font-size:18px;
+}
+
+.email-field {
+    width: 90%;
+    max-width: 270px;
+
+}
+.main-content_subscribe {
+    padding-top: 60px;
+    padding-bottom: 85px;
+}
+
+.main-content_subscribe .page-description {
+    margin-bottom: 73px;
+}
+
+
+.main-content_about-system .page-description {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.main-content_about-system {
+    padding-top: 45px;
+    padding-bottom: 0;
+}
+
+.main-content_about-system .page-title{
+    margin-bottom: 29px;
+}
+
+.main-content_about-system .wrapper-small {
+	width: 100%;
+    margin-top: 44px;
+ 	margin-bottom: 73px;
+}
+
+.main-content_about-system .page-text {
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.slider-arrow {
+	display: none;
+}
+.example-slider {
+	text-align: center;
+}
+
+.example-slider img {
+    width: 100%;
+    max-width: 350px;
+}
+
+.img-first {
+   margin-right: 0; 
+}
+
+
+
+.more-info {
+    width: 93%;
+    max-width: 288px;
+    top: -86px;
+    padding-top: 10px;
+    left: 0px;
+}
+
+.see-more-btn {
+    text-transform: uppercase;
+}
+
+.title_clincheck {
+	font-size: 21px;
+	line-height: 30px;
+}
+
+.cta_clincheck {
+	padding-top: 60px;
+}
+.offer_clincheck {
+    line-height: 21px;
+}
+
+
+/*Причины*/
+
+.reason_item {
+	display: block;
+      width: 100%;
+    max-width: 288px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+ .main-content_reasons {
+   padding-top: 40px;
+   padding-bottom: 60px;
+
+}
+.main-content_reasons .page-title {
+	line-height: 36px;
+}
+.main-content_reasons .page-title br {
+	display: none;
+}
+
+.main-content_reasons .page-description {
+	font-size: 18px;
+	line-height: 32px;
+}
+
+.reasons_list {
+	margin-top: 48px;
+
+}
+.reason-text {
+	line-height: 23px;
+      width: 90%;
+}
+
+
+
+.main-content_reviews{
+padding-bottom: 45px;
+}
+
+    
+.main-content_reviews .wrapper {
+	width: 95%;
+}
+
+.slider_reviews {
+	width: 100%;
+    margin-top: 28px;
+    margin-bottom: 25px;
+}
+
+.review-one {
+    margin-right: 0px;
+}
+
+ .slider_reviews img {
+  width: 100%;
+  }
+
+  .slider_reviews img:nth-child(2) {
+  	display: none;
+  }
+
+ .main-content_reviews {
+    padding-top: 45px;
+    }
+
+    .desktop {
+    	display: none;
+    }
+    .adaptive {
+    	display: inline;
+    }
+
+/*WORLDWIDE*/ 
+.main-content_worldwide {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+
+.main-content_worldwide .page-title {
+	line-height: 45px;
+	margin-bottom: 25px;
+}
+
+.main-content_worldwide .page-text {
+    width:auto;
+}
+
+
+/*FAQ*/
+
+.main-content_faq .wrapper-medium {
+	width: 100%;
+}
+.main-content_faq {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.active-faq-item {
+    padding: 10px
+}
+
+.faq_question {
+	border: none;
+	line-height: 32px;
+}
+
+.active-faq-item {
+    margin-bottom: 40px;
+    }
+
+    .faq_list li {
+    margin-bottom: 30px;
+}
+
+.active_answer {
+	line-height: 22px;
+}
+
+.title_18 {
+	font-size: 18px;
+}
+
+.cta_consult {
+	padding-top: 55px;
+}
+
+/*Новости*/
+
+.main-content_news {
+    padding-top: 40px;
+}
+
+.slider_news {
+	    margin-top: 30px;
+}
+
+.news_item:nth-child(2),
+.news_item:last-child {
+	display: none;
+}
+
+.news-item_title {
+	margin: 0;
+}
+
+.news_item img {
+  width: 100%;
+    max-width: 300px;
+}
+
+/*КОНТАКТЫ*/
+
+.main-content_contacts {
+	height: 300px;
+	position: relative;
+}
+
+.logo-map {
+	position: relative;
+    left: 142px;
+    top: 249px;
+}
+
+.contacts-title {
+font-size: 48px;
+}
+
+.main-content_contacts {
+	padding-top: 65px;
+	background-size: auto;
+    background-position-x: -774px;
+}
+.modal-contacts {
+	display: none;
+}
+
+.modal-contacts_adaptive {
+	display: block;
+    padding-top: 40px;
+    padding-bottom: 75px;
+}
+.modal-contacts_adaptive .adress {
+font-weight: 500;
+}
+
+
+
+.modal-contacts_adaptive p{
+margin-bottom: 30px;
+}
+
+
+.modal-contacts_adaptive .time {
+font-weight: 700;
+margin-bottom: 20px
+}
+
+
+.modal-contacts_adaptive .weekday{
+margin-bottom: 10px;
+}
+
+.adress::before,
+.phone::before,
+.time::before {
+	display: none;
+}
+
+.btn_subscribe {
+	margin-top: 20px;
+    border: 1px solid #dcdcdc;
+}
+
+.adaptive_entrance {
+	display: block;
+	background-image: url("../img/back-worldwide.jpg");
+	padding-top: 65px;
+	position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.adaptive_entrance .page-description,
+.adaptive_price-info .page-description{
+	line-height: 23px;
+	font-size: 18px;
+	margin-bottom: 25px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.adaptive_price-info {
+
+	display: block;
+	background-color: #2745b3;
+	padding-top: 65px;
+	padding-bottom: 75px;
+	text-align: center;
+}
+
+.btn_price-info {
+	background-color: transparent;
+	border: 1px solid #526ac2;
+	color: #ffffff;
+
+}
+
+.main-footer_nav li {
+	display: block;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.main-footer_nav li a {
+	font-weight: 700;
+}
+
+.main-footer_nav {
+	padding-top: 40px;
+	    margin-bottom: 40px;
+}
+
+
+
+.copyright-text {
+	font-weight: 700
+
+}

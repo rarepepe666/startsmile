@@ -1,0 +1,121 @@
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+.top-header {
+	display: none;
+}
+
+.header-adaptive {
+	display: flex;
+}
+.adaptive_call-btn {
+	display: none;
+}
+
+.adaptive_header-logo {
+	display: flex;
+	width: 213px;
+	height: 58px;
+	background: url("../img/logo-big.png");
+}
+.top-header_call {
+	    left: -50px;
+}
+
+.main-content_socials {
+    top: 40px;
+    right: 50px;
+}
+
+.item-description {
+	font-weight: 500;
+}
+
+.disclaimer_text {
+    font-weight: 500;
+}
+
+.main-content_cta {
+
+    padding-bottom: 53px;
+    padding-top: 50px;
+}
+
+.advantage_item {
+	width: 100%;
+  max-width: 315px;
+}
+
+.main-content_price .wrapper-small {
+	display: none;
+}
+
+.advantage_item:nth-child(odd) {
+    margin-left: 0px;
+}
+
+.price_advantages {
+    text-align: center;
+}
+
+.item_one,
+.item_three {
+	margin-right: 100px;
+}
+
+.main-content_price {
+    padding-bottom: 70px;
+}
+
+.reason_item {
+    width: 100%;
+    max-width: 235px;
+    margin:0px 80px 70px;
+}
+
+
+.main-content_reasons {
+    padding-bottom: 40px;
+}
+
+.reason_item:last-child {
+	margin-right: 0px;
+}
+
+.review-img {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	max-width:400px;
+}
+
+.review-one {
+	margin-right: 0;
+}
+
+.arrow-left {
+	position: absolute;
+	left: -40px;
+}
+
+.arrow-right {
+	right: -40px;
+}
+
+.news_item img {
+	    width: 100%;
+    max-width: 299px;
+}
+.news_item {
+margin-right: 0px;
+}
+
+
+
+}
+@media screen and (min-width: 1440px) {
+.reason_item {
+    width: 100%;
+    max-width: 235px;
+    margin: 0px 80px 70px;
+}
+}
