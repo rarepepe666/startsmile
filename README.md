@@ -1,0 +1,2 @@
+# startsmile
+adaptive, js, jquery
