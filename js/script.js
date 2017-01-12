@@ -47,3 +47,39 @@ function auto_right(carusel){
 $(document).on('mouseenter', '.carousel', function(){$(this).addClass('hover')})
 //курсор убран
 $(document).on('mouseleave', '.carousel', function(){$(this).removeClass('hover')})
+
+
+// // Модальное меню
+
+
+
+var openMenu = document.querySelector(".adaptive_menu-btn");
+var showMenu = document.querySelector(".adaptive_modal-menu");
+var closeMenu = document.querySelector(".modal-menu_close");
+var overlay = document.querySelector(".overlay");
+
+openMenu.addEventListener("click", function(event) {
+  event.preventDefault();
+  showMenu.classList.add("show-modal");
+  overlay.classList.add("show-overlay");
+})
+
+closeMenu.addEventListener("click", function(event) {
+  event.preventDefault();
+  showMenu.classList.remove("show-modal");
+  overlay.classList.remove("show-overlay");
+})
+
+overlay.addEventListener("click", function(event) {
+  showMenu.classList.remove("show-modal");
+  overlay.classList.remove("show-overlay");
+})
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (showMenu.classList.contains("show-modal")) {
+        showMenu.classList.remove("show-modal");
+        overlay.classList.remove("show-overlay");
+    }
+  }
+  });
