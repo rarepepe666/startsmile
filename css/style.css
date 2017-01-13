@@ -2691,6 +2691,8 @@ margin-right: 0px;
 
 
 
+div.modal-window_entry {display:none;}
+div.modal-window_entry.show-entry {display:block;}
 
 
 

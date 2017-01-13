@@ -49,118 +49,112 @@ $(document).on('mouseenter', '.carousel', function(){$(this).addClass('hover')})
 $(document).on('mouseleave', '.carousel', function(){$(this).removeClass('hover')})
 
 
-// // Модальное меню
 
 
 
-var openMenu = document.querySelector(".adaptive_menu-btn");
-var showMenu = document.querySelector(".adaptive_modal-menu");
-var closeMenu = document.querySelector(".modal-menu_close");
+// Верхнее выезжающее меню, 320рх
+
+// var openMenu = document.querySelector(".adaptive_menu-btn");
+// var showMenu = document.querySelector(".adaptive_modal-menu");
+// var closeMenu = document.querySelector(".modal-menu_close");
+// var overlay = document.querySelector(".overlay");
+
+// openMenu.addEventListener("click", function(event) {
+//   event.preventDefault();
+//   showMenu.classList.add("show-modal");
+//   overlay.classList.add("show-overlay");
+// })
+
+// closeMenu.addEventListener("click", function(event) {
+//   event.preventDefault();
+//   showMenu.classList.remove("show-modal");
+//   overlay.classList.remove("show-overlay");
+// })
+
+// overlay.addEventListener("click", function(event) {
+//   showMenu.classList.remove("show-modal");
+//   overlay.classList.remove("show-overlay");
+// })
+
+// window.addEventListener("keydown", function(event) {
+//   if (event.keyCode === 27) {
+//     if (showMenu.classList.contains("show-modal")) {
+//         showMenu.classList.remove("show-modal");
+//         overlay.classList.remove("show-overlay");
+//     }
+//   }
+//   });
+
+
+
+// Окно заказа обратного звонка из шапки, 320рх
+
+// var openCallWindow = document.querySelector(".adaptive_call-btn");
+// var showCallWindow = document.querySelector(".adaptive_call-menu");
+// var headerLogo = document.querySelector(".adaptive_header-logo");
+
+// openCallWindow.addEventListener("click", function(event) {
+//   event.preventDefault();
+//   showCallWindow.classList.add("show-call-window");
+//   overlay.classList.add("show-overlay");
+
+// })
+
+// showCallWindow.addEventListener("mouseleave", function(event) {
+//   event.preventDefault();
+//   showCallWindow.classList.remove("show-call-window");
+//   overlay.classList.remove("show-overlay")
+// })
+
+
+// Модальное окно записи на прием для нескольких кнопок
+
+var openModalEntry = document.querySelectorAll(".btn_sign");
+var showModalEntry = document.querySelectorAll(".modal-window_entry");
+var closeModalEntry = document.querySelectorAll(".close-entry");
 var overlay = document.querySelector(".overlay");
 
-openMenu.addEventListener("click", function(event) {
-  event.preventDefault();
-  showMenu.classList.add("show-modal");
-  overlay.classList.add("show-overlay");
-})
+for(var i = 0; i < openModalEntry.length; i++){
+  openModalEntry[i].addEventListener("click", function(event) {
+    event.preventDefault();
+    showModalEntry[0].classList.add("show-entry");
+    overlay.classList.add("show-overlay");
 
-closeMenu.addEventListener("click", function(event) {
-  event.preventDefault();
-  showMenu.classList.remove("show-modal");
-  overlay.classList.remove("show-overlay");
-})
-
-overlay.addEventListener("click", function(event) {
-  showMenu.classList.remove("show-modal");
-  overlay.classList.remove("show-overlay");
-})
-
-window.addEventListener("keydown", function(event) {
-  if (event.keyCode === 27) {
-    if (showMenu.classList.contains("show-modal")) {
-        showMenu.classList.remove("show-modal");
-        overlay.classList.remove("show-overlay");
-    }
-  }
   });
+};
 
-
-
-var openCallWindow = document.querySelector(".adaptive_call-btn");
-var showCallWindow = document.querySelector(".adaptive_call-menu");
-var headerLogo = document.querySelector(".adaptive_header-logo");
-
-openCallWindow.addEventListener("click", function(event) {
-  event.preventDefault();
-  showCallWindow.classList.add("show-call-window");
-  overlay.classList.add("show-overlay");
-
-})
-
-showCallWindow.addEventListener("mouseleave", function(event) {
-  event.preventDefault();
-  showCallWindow.classList.remove("show-call-window");
-  overlay.classList.remove("show-overlay")
-})
-
-
-var openModalEntry = document.querySelector(".btn_sign");
-var showModalEntry = document.querySelector(".modal-window_entry");
-var closeModalEntry = document.querySelector(".close-entry");
-
-openModalEntry.addEventListener("click", function(event) {
-  event.preventDefault();
-  showModalEntry.classList.add("show-entry");
-  overlay.classList.add("show-overlay");
-});
-
-closeModalEntry.addEventListener("click", function(event) {
-  event.preventDefault();
-  showModalEntry.classList.remove("show-entry");
-  overlay.classList.remove("show-overlay");
-})
-
-overlay.addEventListener("click", function(event) {
-  showModalEntry.classList.remove("show-entry");
-  overlay.classList.remove("show-overlay");
-})
-
-window.addEventListener("keydown", function(event) {
-  if (event.keyCode === 27) {
-    if (showModalEntry.classList.contains("show-entry")) {
-        showModalEntry.classList.remove("show-entry");
-        overlay.classList.remove("show-overlay");
-    }
-  }
+for(var i = 0; i < closeModalEntry.length; i++){
+  closeModalEntry[i].addEventListener("click", function(event) {
+    event.preventDefault();
+    showModalEntry[0].classList.remove("show-entry");
+    overlay.classList.remove("show-overlay");
   });
+};
 
 
-var openModalPrice = document.querySelector(".btn_price");
-var showModalPrice = document.querySelector(".modal-window_price");
-var closeModalPrice = showModalPrice.querySelector(".close-entry");
 
-openModalPrice.addEventListener("click", function(event) {
-  event.preventDefault();
-  showModalPrice.classList.add("show-entry");
-  overlay.classList.add("show-overlay");
-});
+// Модальное окно с запросом цены для нексольких кнопок
 
-closeModalPrice.addEventListener("click", function(event) {
-  event.preventDefault();
-  showModalPrice.classList.remove("show-entry");
-  overlay.classList.remove("show-overlay");
-})
 
-overlay.addEventListener("click", function(event) {
-  showModalPrice.classList.remove("show-entry");
-  overlay.classList.remove("show-overlay");
-})
+var openModalPrice = document.querySelectorAll(".btn_price");
+var showModalPrice = document.querySelectorAll(".modal-window_price");
+var closeModalPrice = document.querySelectorAll(".close-entry");
+var overlay = document.querySelector(".overlay");
 
-window.addEventListener("keydown", function(event) {
-  if (event.keyCode === 27) {
-    if (showModalPrice.classList.contains("show-entry")) {
-        showModalPrice.classList.remove("show-entry");
-        overlay.classList.remove("show-overlay");
-    }
-  }
+for(var i = 0; i < openModalPrice.length; i++){
+  openModalPrice[i].addEventListener("click", function(event) {
+    event.preventDefault();
+    showModalPrice[0].classList.add("show-entry");
+    overlay.classList.add("show-overlay");
+
   });
+};
+
+for(var i = 0; i < closeModalPrice.length; i++){
+  closeModalPrice[i].addEventListener("click", function(event) {
+    event.preventDefault();
+    showModalPrice[0].classList.remove("show-entry");
+    overlay.classList.remove("show-overlay");
+  });
+};
+
