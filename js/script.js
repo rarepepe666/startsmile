@@ -83,3 +83,84 @@ window.addEventListener("keydown", function(event) {
     }
   }
   });
+
+
+
+var openCallWindow = document.querySelector(".adaptive_call-btn");
+var showCallWindow = document.querySelector(".adaptive_call-menu");
+var headerLogo = document.querySelector(".adaptive_header-logo");
+
+openCallWindow.addEventListener("click", function(event) {
+  event.preventDefault();
+  showCallWindow.classList.add("show-call-window");
+  overlay.classList.add("show-overlay");
+
+})
+
+showCallWindow.addEventListener("mouseleave", function(event) {
+  event.preventDefault();
+  showCallWindow.classList.remove("show-call-window");
+  overlay.classList.remove("show-overlay")
+})
+
+
+var openModalEntry = document.querySelector(".btn_sign");
+var showModalEntry = document.querySelector(".modal-window_entry");
+var closeModalEntry = document.querySelector(".close-entry");
+
+openModalEntry.addEventListener("click", function(event) {
+  event.preventDefault();
+  showModalEntry.classList.add("show-entry");
+  overlay.classList.add("show-overlay");
+});
+
+closeModalEntry.addEventListener("click", function(event) {
+  event.preventDefault();
+  showModalEntry.classList.remove("show-entry");
+  overlay.classList.remove("show-overlay");
+})
+
+overlay.addEventListener("click", function(event) {
+  showModalEntry.classList.remove("show-entry");
+  overlay.classList.remove("show-overlay");
+})
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (showModalEntry.classList.contains("show-entry")) {
+        showModalEntry.classList.remove("show-entry");
+        overlay.classList.remove("show-overlay");
+    }
+  }
+  });
+
+
+var openModalPrice = document.querySelector(".btn_price");
+var showModalPrice = document.querySelector(".modal-window_price");
+var closeModalPrice = showModalPrice.querySelector(".close-entry");
+
+openModalPrice.addEventListener("click", function(event) {
+  event.preventDefault();
+  showModalPrice.classList.add("show-entry");
+  overlay.classList.add("show-overlay");
+});
+
+closeModalPrice.addEventListener("click", function(event) {
+  event.preventDefault();
+  showModalPrice.classList.remove("show-entry");
+  overlay.classList.remove("show-overlay");
+})
+
+overlay.addEventListener("click", function(event) {
+  showModalPrice.classList.remove("show-entry");
+  overlay.classList.remove("show-overlay");
+})
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (showModalPrice.classList.contains("show-entry")) {
+        showModalPrice.classList.remove("show-entry");
+        overlay.classList.remove("show-overlay");
+    }
+  }
+  });

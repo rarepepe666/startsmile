@@ -199,7 +199,9 @@ a:hover {
     left: 9px;
 }
 
-.adaptive_call-btn {
+.adaptive_call-btn::before {
+	content: '';
+	position: absolute;
 	display: block;
 	width: 40px;
 	height: 40px;
@@ -208,12 +210,16 @@ a:hover {
 	background-image: url("../img/icon-phone.png");
 	background-repeat: no-repeat;
 	background-position: center;
+	    top: 22px;
+    right: 10px;
+
 }
+
 /*Модальное меню*/
 
 .adaptive_modal-menu {
     position: fixed;
-       width: 100%;
+    width: 100%;
     max-width: 255px;
     z-index: 500000;
     background-color: #fff;
@@ -335,6 +341,17 @@ a:hover {
   
 }
 
+@keyframes falling {
+
+  0% {
+    top: -240px;
+  }
+  100% {
+    top: 0;
+  }
+  
+}
+
 .show-modal {
 	display: block;
 	animation: appearing .3s;
@@ -342,6 +359,155 @@ a:hover {
 .show-overlay {
 	display: block;
 }
+
+
+
+
+/*Окно с заказом звонка*/
+.adaptive_call-menu {
+	background-color: #fff;
+	position: absolute;
+	z-index: 50000;
+	top: 0px;
+	left: 0;
+	width:100%;
+	text-align: center;
+	padding-top: 95px;
+    padding-bottom: 35px;
+    display: none;
+
+}
+
+
+.call-menu_phone {
+	font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    margin:0;
+    padding: 0;
+    margin-bottom: 4px;
+}
+
+.call-menu_language {
+    font-size: 13px;
+    color: #9f9faf;
+    margin:0;
+    margin-bottom: 10px;
+    padding: 0;
+
+}
+
+.call-menu_call-order {
+	border: none;
+	outline: none;
+	background-color: transparent;
+    color: #1b5bac;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+.menu-btn_call-window,
+.call-btn_call-window {
+	top:20px;
+}
+.show-call-window {
+	display: block;
+	animation: falling .3s;
+}
+.hide-element {
+	display: none;
+}
+
+
+/*Окно записи 
+*/
+.modal-window_entry,
+.modal-window_price {
+	position: fixed;
+	width: 100%;
+	width: 480px;
+	height: 330px;
+	background-color: #fff;
+	z-index: 500000;
+	left: 35%;
+  	top:20%;
+	text-align: left;
+	padding-left: 40px;
+	padding-top: 20px;
+	display: none;
+}
+
+.entry_title {
+	font-size: 18px;
+	font-weight: 700;
+	text-align: left;
+	margin-bottom: 50px;
+}
+
+.entry_field {
+	border:none;
+	border-bottom: 1px solid #e0e0e0;
+	font-size: 15px;
+	font-weight: 400;
+	outline: none;
+	padding: 10px 0px 5px 5px;
+	color: #a6a6a6;
+}
+
+.entry_field::-webkit-input-placeholder {color:#e0e0e0;}
+::-moz-placeholder          {color:#e0e0e0;}
+:-moz-placeholder           {color:#e0e0e0;}
+:-ms-input-placeholder      {color:#e0e0e0;}
+
+.entry_name,
+.entry_phone {
+	margin-bottom: 40px;
+}
+
+.entry_phone {
+	margin-left: 40px;
+}
+.entry_comment {
+	width: 90%;
+	margin-bottom: 50px;
+}
+
+.close-entry::after {
+	content: '';
+	display: block;
+	position: absolute;
+    width: 40px;
+	height: 40px;
+	/*border: 1px solid #c6d2e7;*/
+	border-radius: 50%;
+	background-image: url("../img/icon-close.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+        top: 25px;
+    left: 455px;
+}
+
+@keyframes bounce {
+
+  50%  {
+    transform: translateX(30px);
+  }
+  90%  {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.show-entry {
+	display: block;
+	animation: bounce .6s;
+}
+
+
 
 /*Главное*/
 
@@ -1511,6 +1677,72 @@ max-width: 1195px;
   	margin-top: 50px;
   }
 
+ /* модальные окна*/
+
+ .modal-window_entry,
+.modal-window_price {
+	position: fixed;
+	width: 100%;
+	/*max-width: 320px;*/
+	height: 425px;
+	background-color: #fff;
+	z-index: 500000;
+  	top:20%;
+	text-align: left;
+	padding-left: 35px;
+	padding-top: 20px;
+	left: 0
+}
+
+
+.entry_title {
+	font-size: 28px;
+	font-weight: 700;
+	text-align: left;
+	margin-bottom: 50px;
+
+}
+
+.entry_field {
+	border:none;
+	border-bottom: 1px solid #e0e0e0;
+	font-size: 15px;
+	font-weight: 400;
+	outline: none;
+	padding: 10px 0px 5px 5px;
+	color: #a6a6a6;
+	width: 77%;
+}
+
+.entry_field::-webkit-input-placeholder {color:#e0e0e0;}
+::-moz-placeholder          {color:#e0e0e0;}
+:-moz-placeholder           {color:#e0e0e0;}
+:-ms-input-placeholder      {color:#e0e0e0;}
+
+
+
+.entry_phone {
+	margin-left: 0px;
+}
+
+
+.close-entry::after {
+	content: '';
+	display: block;
+	position: absolute;
+    width: 40px;
+	height: 40px;
+	/*border: 1px solid #c6d2e7;*/
+	border-radius: 50%;
+	background-image: url("../img/icon-close.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+        top: 25px;
+    left: 455px;
+}
+
+
 /*Преимущества*/
 
   .wrapper-semi-medium {
@@ -2321,7 +2553,6 @@ margin-bottom: 10px;
 }
 
 /*Слайдеры 768*/
-
 
 
 
